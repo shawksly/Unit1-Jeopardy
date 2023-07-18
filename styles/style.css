@@ -1,0 +1,95 @@
+/* Imports Jeopardy logo and clue fonts */
+@import url(https://db.onlinewebfonts.com/c/af00772b2382ae86df20a77f12ca74f5?family=Gyparody+V2);
+@import url(https://db.onlinewebfonts.com/c/ad2018bfc438bddea8e47c71a85f169b?family=ITC+Korinna+Bold);
+
+/* I used this for formatting and to tell where padding was affecting placement */
+/* * {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+} */
+
+/* Sets background color */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #06148d;
+}
+
+/* Keeps header from top of screen */
+header {
+    margin-top: 8vh;
+}
+
+/* Sets header to Jeopardy font and applies gradient */
+header p {
+    margin: 0 0 2vh;
+    text-transform: uppercase;
+    font-family: "Gyparody V2", 'Russo One', sans-serif;
+    font-weight: 700;
+    font-size: 120px;
+    color: transparent;
+    background: linear-gradient(0deg, #f6fffc, #c5b1d6);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* Grid container, sets to column, aligns, justifies, and fits height to window. */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 99vh;
+}
+
+/* Sets main image size */
+main img {
+    width: 70vw;
+}
+
+/* Sets anchor background and size, acts as the border for my Jeopardy "screen" */
+#btn {
+    display: inline-block;
+    background-color: black;
+    margin: 2vh 0px 0px;
+    padding: 0;
+    height: 6vh;
+    width: 10vh;
+}
+
+/* Sets font to Jeopardy clue font, styled to look like the screen to my Jeopardy "screen" */
+#btn button {
+    font-family: "ITC Korinna Bold", 'Roboto', sans-serif;
+    font-weight:bold;
+    font-size: 2rem;
+    background: #081484;
+    border-radius: 0.5rem;
+    border-style: none;
+    border-color: black;
+    color: white;
+    margin: 0.3vh;
+    padding: 0;
+    height: 5.4vh;
+    width: 9.4vh;
+}
+
+/* On hover, changes the button to lose some of its border and change text color to price colors */
+#btn button:hover {
+    color: #d69f4c;
+    margin: 0.1vh;
+    height: 5.8vh;
+    width: 9.8vh;
+}
+
+/* Pushes this element to the bottom and styles text */
+main footer{
+    margin-top: auto;
+    color: white;
+}
+
+/* Keeps footer from bottom of screen */
+footer p {
+    margin: 0.5vh;
+}
