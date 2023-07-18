@@ -3,11 +3,11 @@
 @import url(https://db.onlinewebfonts.com/c/ad2018bfc438bddea8e47c71a85f169b?family=ITC+Korinna+Bold);
 
 /* I used this for formatting and to tell where padding was affecting placement */
-/* * {
-    border: 1px solid black;
-    margin: 0;
-    padding: 0;
-} */
+* {
+    border: 1px solid green;
+    /* margin: 0;
+    padding: 0; */
+}
 
 /* Sets background color */
 body {
@@ -35,7 +35,7 @@ header p {
     -webkit-background-clip: text;
 }
 
-/* Grid container, sets to column, aligns, justifies, and fits height to window. */
+/* Flex container, sets to column, aligns, justifies, and fits height to window. */
 main {
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ main img {
 }
 
 /* Sets anchor background and size, acts as the border for my Jeopardy "screen" */
-#btn {
+.home-btn {
     display: inline-block;
     background-color: black;
     margin: 2vh 0px 0px;
@@ -60,7 +60,7 @@ main img {
 }
 
 /* Sets font to Jeopardy clue font, styled to look like the screen to my Jeopardy "screen" */
-#btn button {
+.home-btn button {
     font-family: "ITC Korinna Bold", 'Roboto', sans-serif;
     font-weight:bold;
     font-size: 2rem;
