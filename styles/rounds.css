@@ -35,7 +35,7 @@
     height: 6.75rem;
 }
 
-/* Sets screen (square) text layout -- not entirely sure I did the transition correctly */
+/* Sets screen (square) text layout */
 .screen p {
     display:flex;
     align-items: center;
@@ -48,18 +48,6 @@
     margin: 0;
     width: 12rem;
     height: 6.75rem;
-    transition: background-color 0.2s,
-                margin 0.2s,
-                width 0.2s,
-                height 0.2s;
-}
-
-/* Sets margin, size and background color change for screen (square) hover */
-.screen p:hover {
-    background-color:#0a1894;
-    margin: 0.075rem;
-    width: 11.75rem;
-    height: 6.5rem;
 }
 
 /* Sets category screen (square) text */
@@ -87,14 +75,30 @@
     transition: color 0.2s;
 }
 
+/* Sets clue text color change on hover */
+.clue:hover {
+    color:#d8993b;
+}
+
 /* sets separate size of "$" for clue screens (squares) */
 .clue span{
     font-size: 4.25rem;
 }
 
-/* Sets clue text color change on hover */
-.clue:hover {
-    color:#d8993b;
+/* Sets transitions for clue background on hover */
+.clue p {
+    transition: background-color 0.2s,
+                margin 0.2s,
+                width 0.2s,
+                height 0.2s;
+}
+
+/* Sets margin, size and background color change for clue screen (square) hover */
+.clue p:hover {
+    background-color:#0a1894;
+    margin: 0.075rem;
+    width: 11.75rem;
+    height: 6.5rem;
 }
 
 /* Styles input box */

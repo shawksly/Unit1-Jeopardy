@@ -5,11 +5,11 @@
 @import url(https://db.onlinewebfonts.com/c/1ff95b1ff8fb906b63d36e68d0d07a07?family=Helvetica+Condensed+Black);
 
 /* I used this for formatting and to tell where padding was affecting placement */
-* {
-    /* border: 1px solid green; */
+/* * {
+    border: 1px solid green; */
     /* margin: 0;
-    padding: 0; */
-}
+    padding: 0;
+} */
 
 /* Sets background color */
 body {
