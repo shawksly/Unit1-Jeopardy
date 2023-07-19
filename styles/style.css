@@ -1,10 +1,12 @@
 /* Imports Jeopardy logo and clue fonts */
 @import url(https://db.onlinewebfonts.com/c/af00772b2382ae86df20a77f12ca74f5?family=Gyparody+V2);
 @import url(https://db.onlinewebfonts.com/c/ad2018bfc438bddea8e47c71a85f169b?family=ITC+Korinna+Bold);
+@import url(https://db.onlinewebfonts.com/c/6cc8a459c592c0f8b721e09ab3ff16d2?family=Swiss+911+Extra+Compressed);
+@import url(https://db.onlinewebfonts.com/c/1ff95b1ff8fb906b63d36e68d0d07a07?family=Helvetica+Condensed+Black);
 
 /* I used this for formatting and to tell where padding was affecting placement */
 * {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     /* margin: 0;
     padding: 0; */
 }
@@ -18,7 +20,7 @@ body {
 
 /* Keeps header from top of screen */
 header {
-    margin-top: 8vh;
+    margin-top: 4vh;
 }
 
 /* Sets header to Jeopardy font and applies gradient */
@@ -76,7 +78,7 @@ main img {
 }
 
 /* On hover, changes the button to lose some of its border and change text color to price colors */
-#btn button:hover {
+.home-btn button:hover {
     color: #d69f4c;
     margin: 0.1vh;
     height: 5.8vh;

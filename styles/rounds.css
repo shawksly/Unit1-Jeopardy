@@ -1,12 +1,12 @@
 .non-first-page-header p {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Condensed Black", Helvetica, Arial, sans-serif;
     font-size: 6rem;
     font-weight: 800;
 }
 #turn p{
     margin: 1vh;
     text-transform: uppercase;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Condensed Black", Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 2rem;
     color: white;
@@ -14,51 +14,96 @@
 #main-grid-container {
     display: grid;
     grid-template: repeat(6, 1fr) / repeat (6, 1fr);
-    width: 95vw;
-    /* justify-content: stretch; */
+    /* width: 95vw; */
+    justify-content: center;
+    gap: 0.25rem;
+    background-color: black;
+    padding: 0.45rem;
 }
 
 .screen {
-    display: inline-block;
     background-color: black;
-    /* margin: 2vh 0px 0px; */
     padding: 0;
-    /* height: 6vh;
-    width: 10vh; */
-    text-align: center;
-    height: 5vh;
+    width: 12rem;
+    height: 6.75rem;
 }
 
 .screen p {
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background: #081484;
     border-radius: 0.5rem;
     border-style: none;
     border-color: black;
+    text-transform: uppercase;
     margin: 0;
-    height: 2rem;
-    /* margin: 0.3vh;
-    padding: 0;
-    height: 5.4vh;
-    width: 9.4vh; */
+    width: 12rem;
+    height: 6.75rem;
+    transition: 0.2s;
+}
+
+.screen p:hover {
+    background-color:#0a1894;
+    margin: 0.075rem;
+    width: 11.75rem;
+    height: 6.5rem;
 }
 
 .category {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1rem;
+    font-family: "Helvetica Condensed Black", Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
     font-weight: 800;
     color: white;
 }
 
 .clue {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: 800;
+    font-family: "Swiss 911 Extra Compressed", Helvetica, Arial, sans-serif;
+    font-size: 5.5rem;
+    font-weight: 500;
+    letter-spacing: .15rem;
     color: #d69f4c;
+    text-shadow: 0.1rem 0.1rem 0 black,
+                 0.15rem 0.15rem 0 black,
+                 0.2rem 0.2rem 0 black,
+                 0.25rem 0.25rem 0 black,
+                 0.3rem 0.3rem 0 black,
+                 0.35rem 0.35rem 0 black;
+    transition: 0.1s;
 }
 
-#guess {
-    display: inline-block;
-    width: 20vw;
+.clue:hover {
+    color:#d8993b;
+}
+
+.clue span{
+    font-size: 4.25rem;
+}
+
+
+#input-guess {
+    /* display: inline-block; */
+    width: 26vw;
+    outline: none;
+    border: 3px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+}
+
+#input-guess::placeholder {
+    color: #888888;
+}
+
+/* I found this online as a way to hide a label while maintaining compatability with screen readers */
+#input-guess-hidden-label {
+    border-width: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 1px !important;
 }
 
 /* Grid items: Row 1 */
