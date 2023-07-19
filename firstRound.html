@@ -153,9 +153,9 @@
             </div>
         </div>
 
-        <!-- Input box -->
+        <!-- Input box and label -->
         <input type="text" id="input-guess" name="guess" placeholder="Your Guess...">
-        <label id="input-guess-hidden-label"for="input-guess">Guess</label>
+        <label id="input-guess-hidden-label" for="input-guess">Guess</label>
 
         <!-- Flex container for input buttons -->
         <div id="input-btn-flex-container">
@@ -175,11 +175,12 @@
             <p>Player 2 Score: 0</p>
         </div>
 
-        <!-- Flex container for Prev- and Next-Round buttons - prev- hidden this round -->
+        <!-- Flex container for Prev- and Next-Round buttons -->
         <div id="progress-btn-flex-container">
 
             <!-- Prev Round button -->
-            <a class="btn" href="#"><button>Prev Round</button></a>
+            <!-- HIDDED VIA CSS THIS ROUND -->
+            <a class="btn hidden" href="#"><button>Prev Round</button></a>
 
             <!-- Next Round button -->
             <a class="btn" href="#"><button>Next Round</button></a>
@@ -187,7 +188,7 @@
 
         <!-- Footer -->
         <footer>
-            <p>Upright Unit 1 Project Copyright ©2023</p>
+            <p><a href=./index.html>Upright Unit 1 Project Copyright ©2023</a></p>
         </footer>
     </main>
 </body>

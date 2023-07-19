@@ -1,8 +1,12 @@
+/* Sets header characteristics unique to second page */
 .non-first-page-header p {
     font-family: "Helvetica Condensed Black", Helvetica, Arial, sans-serif;
     font-size: 6rem;
     font-weight: 800;
+    margin-bottom: 0vh;
 }
+
+/* Sets font and styling for "player turn" text */
 #turn p{
     margin: 1vh;
     text-transform: uppercase;
@@ -11,16 +15,19 @@
     font-size: 2rem;
     color: white;
 }
+
+/* Sets up grid for Jeopardy board */
 #main-grid-container {
     display: grid;
     grid-template: repeat(6, 1fr) / repeat (6, 1fr);
-    /* width: 95vw; */
     justify-content: center;
     gap: 0.25rem;
     background-color: black;
     padding: 0.45rem;
+    align-items: space-between;
 }
 
+/* Sets screen (square) div layout */
 .screen {
     background-color: black;
     padding: 0;
@@ -28,6 +35,7 @@
     height: 6.75rem;
 }
 
+/* Sets screen (square) text layout -- not entirely sure I did the transition correctly */
 .screen p {
     display:flex;
     align-items: center;
@@ -40,9 +48,13 @@
     margin: 0;
     width: 12rem;
     height: 6.75rem;
-    transition: 0.2s;
+    transition: background-color 0.2s,
+                margin 0.2s,
+                width 0.2s,
+                height 0.2s;
 }
 
+/* Sets margin, size and background color change for screen (square) hover */
 .screen p:hover {
     background-color:#0a1894;
     margin: 0.075rem;
@@ -50,13 +62,16 @@
     height: 6.5rem;
 }
 
+/* Sets category screen (square) text */
 .category {
     font-family: "Helvetica Condensed Black", Helvetica, Arial, sans-serif;
     font-size: 1.5rem;
     font-weight: 800;
     color: white;
+    margin: 0 0 0.45rem;
 }
 
+/* Styles clue (square) text, including shadow */
 .clue {
     font-family: "Swiss 911 Extra Compressed", Helvetica, Arial, sans-serif;
     font-size: 5.5rem;
@@ -69,32 +84,92 @@
                  0.25rem 0.25rem 0 black,
                  0.3rem 0.3rem 0 black,
                  0.35rem 0.35rem 0 black;
-    transition: 0.1s;
+    transition: color 0.2s;
 }
 
-.clue:hover {
-    color:#d8993b;
-}
-
+/* sets separate size of "$" for clue screens (squares) */
 .clue span{
     font-size: 4.25rem;
 }
 
+/* Sets clue text color change on hover */
+.clue:hover {
+    color:#d8993b;
+}
 
+/* Styles input box */
 #input-guess {
-    /* display: inline-block; */
+    margin: 1vh 0 0.5vh;
     width: 26vw;
     outline: none;
-    border: 3px solid black;
+    border-radius: 0.25rem;
+    border: 0.2rem solid #3ca3e7;
     font-family: 'Roboto', sans-serif;
     font-size: 2.5rem;
 }
 
+/* Sets placeholder text style */
 #input-guess::placeholder {
     color: #888888;
 }
 
-/* I found this online as a way to hide a label while maintaining compatability with screen readers */
+/* holds buttons in flex */
+#input-btn-flex-container {
+    display: flex;
+    min-width:99vw;
+    justify-content: center;
+}
+
+/* Styles button */
+.btn button {
+    font-family: "Helvetica Condensed Black", Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 0.25rem;
+    border: 0.2rem solid #3ca3e7;
+    color: #3ca3e7;
+    min-width: 8vw;
+    margin: 0.5vh 7vw 0;
+    padding: 0.25vh 1.25vh;
+    transition: background-color 0.2s,
+                color 0.2s;
+}
+
+/* Sets button animation during hover */
+.btn button:hover {
+    background: #3ca3e7;
+    color: #06148d;
+}
+
+/* Formats placement of player scores with flex */
+#player-score-flex-container {
+    display: flex;
+    min-width: 99vw;
+    justify-content: space-between;
+}
+
+/* Formats player score text */
+#player-score-flex-container p{
+    margin: 1vh 7vw;
+    font-family: "Helvetica Condensed Black", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Formats prev and next round button placement with flex */
+#progress-btn-flex-container {
+    display: flex;
+    min-width: 99vw;
+    justify-content: space-between;
+}
+
+/* Hides "Prev Round" button for first round */
+.hidden {
+    visibility: hidden;
+}
+
+/* I found this online as a way to hide an input label while maintaining compatability with screen readers */
 #input-guess-hidden-label {
     border-width: 0 !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
