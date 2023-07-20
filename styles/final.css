@@ -17,6 +17,7 @@
     width: 32rem;
     height: 18rem;
     padding: 0 3vw;
+    border-radius: 1.25;
 }
 
 /* Sets text styling for category, and makes a gap between the screens */

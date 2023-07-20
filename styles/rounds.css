@@ -16,6 +16,35 @@
     color: white;
 }
 
+/* Styles question placeholder container for the stretch goal -- mostly formatting of the box */
+#question-container {
+    margin: 0 0 0.25rem;
+    width: 50rem;
+    height: 4.5rem;
+    background-color: black;
+    border-radius: 0.75rem
+}
+
+/* Styles question placeholder text for the stretch goal */
+#question-container p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem;
+    padding: 0 1vw 0;
+    width: 49.6rem;
+    height: 4.1rem;
+    box-sizing: border-box;
+    background: #081484;
+    border-radius: 0.5rem;
+    border-style: none;
+    text-transform: uppercase;
+    font-family: "ITC Korinna Bold", 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
 /* Sets up grid for Jeopardy board */
 #main-grid-container {
     display: grid;
