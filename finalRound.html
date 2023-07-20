@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Imports css -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/rounds.css">
+    <link rel="stylesheet" href="./styles/final.css">
+    <!-- Imports Google fonts that I ended up using as backup fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Russo+One&display=swap" rel="stylesheet">
+
+    <!-- Title with file reference -->
+    <title>finalRound.html | Jeopardy | Final Round</title>
+</head>
+<body>
+    
+    <!-- Flex Container -->
+    <main>
+
+        <!-- Header -->
+        <header class="non-first-page-header">
+            <p>Final Round</p>
+        </header>
+
+        <!-- Player's Turn Subtitle -->
+        <div id="turn">
+            <p>Player 1 Turn</p>
+        </div>
+
+        <div id="final-question-container">
+            <!-- Final category screen-->
+            <div id="final-category" class="final-screen screen">
+                <p>A Real Font<br>of Knowledge</p>
+            </div>
+
+            <!-- Final Question screen
+                I got about half way to figuring out how to put the capcom logo inline
+                also this is a modified real Jeopardy clue I ran across-->
+            <div id="final-question" class="final-screen screen">
+                <p>The designer of ITC Korinna, the typeface<br>used for Jeopardy! clue screens since 1984, as well as the Capcom logo.</p>
+            </div>
+        </div>
+
+        <!-- Input box and label -->
+        <input type="text" class="input-field" name="guess" placeholder="Point Bet Amount...">
+        <label class="input-field-hidden-label" for="input-guess">Bet</label>
+        <input type="text" class="input-field" name="guess" placeholder="Final Answer...">
+        <label class="input-field-hidden-label" for="input-guess">Answer</label>
+
+        <!-- Bet button -- set to disabled -->
+        <input disabled type="submit" class="input-btn" value="BET">
+
+        <!-- Flex container for Prev- and Next-Round buttons -->
+        <div id="progress-btn-flex-container">
+
+            <!-- Prev Round button -->
+            <a class="btn" href="./secondRound.html"><button>Prev Round</button></a>
+
+            <!-- Next Round button -->
+            <a class="btn" href="./index.html"><button>Next Round</button></a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p><a href=./index.html>Upright Unit 1 Project Copyright ©2023</a></p>
+        </footer>
+
+    </main>
+</body>
+</html>

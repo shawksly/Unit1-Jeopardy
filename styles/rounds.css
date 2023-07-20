@@ -35,9 +35,9 @@
     height: 6.75rem;
 }
 
-/* Sets screen (square) text layout */
+/* Sets screen (square) text layout, uses flex to center content*/
 .screen p {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     background: #081484;
@@ -57,6 +57,7 @@
     font-weight: 800;
     color: white;
     margin: 0 0 0.45rem;
+    text-align: center;
 }
 
 /* Styles clue (square) text, including shadow */
@@ -102,9 +103,9 @@
 }
 
 /* Styles input box */
-#input-guess {
+.input-field {
     margin: 1vh 0 0.5vh;
-    width: 26vw;
+    width: 28vw;
     outline: none;
     border-radius: 0.25rem;
     border: 0.2rem solid #3ca3e7;
@@ -113,7 +114,7 @@
 }
 
 /* Sets placeholder text style */
-#input-guess::placeholder {
+.input-field::placeholder {
     color: #888888;
 }
 
@@ -125,7 +126,7 @@
 }
 
 /* Styles button */
-.btn button {
+.btn button, .input-btn {
     font-family: "Helvetica Condensed Black", Helvetica, Arial, sans-serif;
     font-size: 1.5rem;
     background-color: transparent;
@@ -140,7 +141,7 @@
 }
 
 /* Sets button animation during hover */
-.btn button:hover {
+.btn button:hover, .input-btn:hover {
     background: #3ca3e7;
     color: #06148d;
 }
@@ -173,8 +174,9 @@
     visibility: hidden;
 }
 
-/* I found this online as a way to hide an input label while maintaining compatability with screen readers */
-#input-guess-hidden-label {
+/* I found this online as a way to hide an input label while maintaining compatability with screen readers.
+Link: https://css-tricks.com/html-inputs-and-labels-a-love-story/#aa-do-make-the-label-visible */
+.input-field-hidden-label {
     border-width: 0 !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
     height: 1px !important;

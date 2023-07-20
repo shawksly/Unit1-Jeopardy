@@ -1,0 +1,58 @@
+/* Sets black background for category and question */
+#final-question-container {
+    padding: 0.45rem;
+    background-color: black;
+}
+
+/* This styles .screen for the bigger format. It overrides previous values because it's loaded last in the html file. */
+.final-screen {
+    width: 32rem;
+    height: 18rem;
+}
+
+/* This styles .screen <p> for the bigger format. It overrides previous values because it's loaded last in the html file.
+--Box sizing makes padding possible for <p> */
+.final-screen p {
+    box-sizing: border-box;
+    width: 32rem;
+    height: 18rem;
+    padding: 0 3vw;
+}
+
+/* Sets text styling for category, and makes a gap between the screens */
+#final-category {
+    margin-bottom: 0.45rem;
+    font-family: "Helvetica Condensed Black", Helvetica, Arial, sans-serif;
+    font-size: 4.5rem;
+    color: white;
+    text-align: center;
+    line-height: 4rem;
+}
+
+/* Sets padding for category text using box-sizing from .final-screen p */
+#final-category p {
+    padding: 1vh 2vw;
+}
+
+/* Sets text styling for question and makes a gap between the screens
+--Also, there's a shadow here that I worked hard to make look acurate. But if you zoom out, you'll never see it -facepalm- */
+#final-question {
+    margin-top: 0.45rem;
+    font-family: "ITC Korinna Bold", 'Roboto', sans-serif;
+    font-size: 1.75rem;
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+    text-shadow: 0.2rem 0.2rem 0 black;
+}
+
+/* Sets padding for question text using box-sizing from .final-screen p */
+#final-question p {
+    padding: 1vh 3vw;
+}
+
+/* styles disabled button */
+input[disabled] {
+    pointer-events: none;
+    background: #2a5ece;
+}
