@@ -1,6 +1,6 @@
 # Upright Unit 1 - Jeopardy Project
 
-#### URL: [https://github.com/shawksly/Unit1-Jeopardy](https://github.com/shawksly/Unit1-Jeopardy)
+#### URL: [https://shawksly.github.io/Unit1-Jeopardy/](https://shawksly.github.io/Unit1-Jeopardy/)
 
 ## Status === Complete
 
